@@ -1,0 +1,68 @@
+html,
+body {
+    height: 100%;
+}
+body {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#centered-toggle-button {
+    position: absolute;
+}
+
+.modal {
+  width: 500px;
+  background: white;
+  transition: 1.1s ease-out;
+  box-shadow: -2rem 2rem 2rem rgba(0, 0, 0, 0.2);
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal .content{
+    padding-left: 3px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.modal .actions {
+    background: #3B77BC;
+}
+
+.modal .actions h4{
+    font-family: "Trebuchet MS";
+    color: white;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 3px 5px 3px 3px;
+    font-size: 13px;
+    text-shadow: 1px 1px #0f1089;
+    margin-left: 1px;
+    height: 50%;
+    
+}
+
+.modal .actions .toggle-button{
+    width: 5%;
+    height: 50%;
+    position:absolute;
+    top:0;
+    right:0;
+    visibility: hidden;
+}
+
+.modal .actions .toggle-button .close-icon{
+    width: 80%;
+    position:absolute;
+    top:0;
+    right:0;
+    visibility: visible;
+    cursor: pointer;
+}
+

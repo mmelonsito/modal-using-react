@@ -27,6 +27,9 @@ class App extends React.Component{
 
                 <Modal onClose={this.showModal} show={this.state.show}>
                     Hello! I'm the modal created by Míriam.
+                    You can close me clicking <a href="#" onClick={e => {
+                        this.showModal(e);
+                    }}> here</a> too.
                 </Modal>
 
             </div>

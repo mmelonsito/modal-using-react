@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./modal.css";
 
 export default class Modal extends React.Component{
     
@@ -13,9 +14,13 @@ export default class Modal extends React.Component{
         }
         return(
             <div class="modal" id="modal">
-                <h2> Modal Window </h2>
+                <div class="actions">
+                    <h4> Modal Window </h4>
+                    <button class="toggle-button" onClick={this.onClose}> 
+                        <img class="close-icon" src="close.png" alt="close"/> 
+                    </button>
+                </div>
                 <div class="content"> {this.props.children} </div>
-                <button class="toggle-button" onClick={this.onClose}> <img src="close.png" alt="close"/> </button>
             </div>
         );
     }
