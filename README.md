@@ -13,9 +13,9 @@ Para cerrarlo, existen dos alternativas:
 Por otro lado, si el desarrollador desea cambiar el icono de la X por cualquier
 otro a su gusto, puede hacerlo cambiando el `src` en el código siguiente:
 
-<button class="toggle-button" onClick={this.onClose}> 
-    <img class="close-icon" src="close.png" alt="close"/> 
-</button>
+`<button class="toggle-button" onClick={this.onClose}> `
+    `<img class="close-icon" src="close.png" alt="close"/>`
+`</button>`
 
 Por ejemplo, si lo desea, puede probar a escribir `src="heart.png"` y verá que
 el icono se cambia por el de un corazón.
