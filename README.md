@@ -17,7 +17,7 @@ otro a su gusto, puede hacerlo cambiando el `src` en el código siguiente:
     `<img class="close-icon" src="close.png" alt="close"/>`
 `</button>`
 
-Por ejemplo, si lo desea, puede probar a escribir `src="heart.png"` y verá que
+Por ejemplo, si se desea, puede probar a escribir `src="heart.png"` y verá que
 el icono se cambia por el de un corazón.
 
 Tampoco tiene por qué ser un `img`, puede ser un link, un div... Cualquier elemento.
