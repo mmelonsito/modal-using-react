@@ -13,14 +13,14 @@ export default class Modal extends React.Component{
             return null;
         }
         return(
-            <div class="modal" id="modal">
-                <div class="actions">
+            <div className="modal" id="modal">
+                <div className="actions">
                     <h4> Modal Window </h4>
-                    <button class="toggle-button" onClick={this.onClose}> 
-                        <img class="close-icon" src="close.png" alt="close"/> 
+                    <button className="toggle-button" onClick={this.onClose}> 
+                        <img className="close-icon" src="close.png" alt="close"/> 
                     </button>
                 </div>
-                <div class="content"> {this.props.children} </div>
+                <div className="content"> {this.props.children} </div>
             </div>
         );
     }

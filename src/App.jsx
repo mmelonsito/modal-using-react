@@ -6,6 +6,7 @@ class App extends React.Component{
     state = {
         show: false
     };
+    
     showModal = e => {
         this.setState({
             show: !this.state.show
@@ -16,7 +17,7 @@ class App extends React.Component{
         return(
             <div className="App">
                 <button 
-                    class="toggle-button"
+                    className="toggle-button"
                     id="centered-toggle-button"
                     onClick={e => {
                         this.showModal(e);
