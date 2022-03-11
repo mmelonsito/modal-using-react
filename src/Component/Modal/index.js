@@ -26,6 +26,8 @@ export default class Modal extends React.Component{
     }
 }
 
+// The function onClose is necessary to be able to close the modal.
+// The show boolean indicates whether the modal is visible or not.
 Modal.propTypes = {
     onClose: PropTypes.func.isRequired,
     show: PropTypes.bool.isRequired

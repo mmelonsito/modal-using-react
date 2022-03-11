@@ -28,6 +28,12 @@ la ventana.
 ## Ejecución
 
 En el directorio del proyecto, puedes ejecutar:
-### `npm start`
 
-Y se lanzará la aplicación.
+### `npm start`
+Se lanzará la aplicación.
+
+### `npm test`
+Se lanzarán los test de la aplicación.
+
+### `npm test -- --coverage`
+Para saber, además, el coverage de las pruebas.
