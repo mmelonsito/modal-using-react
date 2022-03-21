@@ -9,7 +9,7 @@ export default class Modal extends React.Component{
             return null;
         }
         return(
-            <div className="modal" id="modal">
+            <div className="modal" id="modal" data-testid="pruebame">
                 <div className="actions">
                     <h4> Modal Window </h4>
                     {this.props.buttonClose}
