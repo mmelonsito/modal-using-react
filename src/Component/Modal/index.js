@@ -1,13 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types'
 import "./modal.css";
-import Button from "../Button/index.js";
 
 export default class Modal extends React.Component{
-    
-    onClose = e => {
-        this.props.onClose && this.props.onClose(e);
-    };
 
     render() {
         if(!this.props.show){
@@ -24,9 +19,7 @@ export default class Modal extends React.Component{
         );
     }
 }
-/*<button className="toggle-button" onClick={this.onClose}> 
-                        <img className="close-icon" src="close.png" alt="close"/> 
-                    </button> */
+
 // The function onClose is necessary to be able to close the modal.
 // The show boolean indicates whether the modal is visible or not.
 Modal.propTypes = {

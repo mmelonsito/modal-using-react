@@ -12,6 +12,7 @@ body {
 
 #centered-toggle-button {
     position: absolute;
+    cursor: pointer;
 }
 
 .modal {
@@ -29,6 +30,7 @@ body {
     padding-left: 3px;
     padding-top: 15px;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 
 .modal .actions {

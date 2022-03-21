@@ -1,50 +1,38 @@
 import React from "react";
 import Modal from "./Component/Modal";
 import Button from "./Component/Button";
+import useModal from './Hook/useModal';
 
-class App extends React.Component{
+function App() {
 
-    state = {
-        show: false
-    };
+    const [isOpenModal, openModal, closeModal ] = useModal();
     
-    showModal = e => {
-        this.setState({
-            show: !this.state.show
-        });
-    };
+    return(
+        <div className="App">
+            <button 
+                className="toggle-button"
+                id="centered-toggle-button"
+                onClick={openModal}
+            >
+                {" "}Show modal{" "}
+            </button>
 
-    render() {
-        return(
-            <div className="App">
-                <button 
-                    className="toggle-button"
-                    id="centered-toggle-button"
-                    onClick={e => {
-                        this.showModal(e);
-                    }}
-                >
-                    {" "}Show modal{" "}
-                </button>
-
-                <Modal 
-                    onClose={this.showModal} 
-                    show={this.state.show}
-                    buttonClose={
-                        <Button 
-                            value="close.png"
-                            onClick={e => {
-                                this.showModal(e);}}> 
-                        </Button> 
-                }>
+            <Modal 
+                onClose={closeModal} 
+                show={isOpenModal}
+                buttonClose={
+                    <Button 
+                        value="close.png"
+                        onClick={closeModal}> 
+                    </Button> 
+            }>
+                <span onClick={closeModal} cursor> 
                     Hello! I'm the modal created by Míriam.
-                    You can close me clicking <a href="#" onClick={e => {
-                        this.showModal(e);
-                    }}> here</a> too.
-                </Modal>
-            </div>
-        );
-    }
+                    You can close me clicking here too.
+                </span>
+            </Modal>
+        </div>
+    );
 }
 
 export default App;
