@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "./Component/Modal";
+import Button from "./Component/Button";
 
 class App extends React.Component{
 
@@ -26,13 +27,21 @@ class App extends React.Component{
                     {" "}Show modal{" "}
                 </button>
 
-                <Modal onClose={this.showModal} show={this.state.show}>
+                <Modal 
+                    onClose={this.showModal} 
+                    show={this.state.show}
+                    buttonClose={
+                        <Button 
+                            value="close.png"
+                            onClick={e => {
+                                this.showModal(e);}}> 
+                        </Button> 
+                }>
                     Hello! I'm the modal created by Míriam.
                     You can close me clicking <a href="#" onClick={e => {
                         this.showModal(e);
                     }}> here</a> too.
                 </Modal>
-
             </div>
         );
     }

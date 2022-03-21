@@ -2,6 +2,7 @@ html,
 body {
     height: 100%;
 }
+
 body {
     background: #eee;
     display: flex;
@@ -47,22 +48,3 @@ body {
     height: 50%;
     
 }
-
-.modal .actions .toggle-button{
-    width: 5%;
-    height: 50%;
-    position:absolute;
-    top:0;
-    right:0;
-    visibility: hidden;
-}
-
-.modal .actions .toggle-button .close-icon{
-    width: 80%;
-    position:absolute;
-    top:0;
-    right:0;
-    visibility: visible;
-    cursor: pointer;
-}
-

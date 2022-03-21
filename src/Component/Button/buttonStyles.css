@@ -1,0 +1,17 @@
+.buttoncito{
+    width: 5%;
+    height: 50%;
+    position:absolute;
+    top:0;
+    right:0;
+    visibility: hidden;
+}
+
+.buttoncito .close-icon{
+    width: 80%;
+    position:absolute;
+    top:0;
+    right:0;
+    visibility: visible;
+    cursor: pointer;
+}
